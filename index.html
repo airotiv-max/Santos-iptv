@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Santos TV</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(160deg, #0b0029, #1b003b);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: transparent;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #6baaff;
+    }
+
+    .logo span {
+      color: #c17dff;
+    }
+
+    .btn-contato {
+      padding: 10px 20px;
+      background: #b04bff;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 10px #b04bff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2em;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(to right, #6baaff, #c17dff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 500px;
+      margin: 20px auto;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .btn-acesso {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #6baaff, #c17dff);
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .plano {
+      background-color: #17003a;
+      border-radius: 10px;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 350px;
+      text-align: center;
+      border: 1px solid #6baaff;
+    }
+
+    .plano h2 {
+      margin-bottom: 0;
+    }
+
+    .plano p {
+      color: #bbb;
+    }
+
+    .preco {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .plano ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .plano li::before {
+      content: "✔️ ";
+      color: #5effb9;
+    }
+
+    .btn-wpp {
+      display: inline-block;
+      margin-top: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .categorias {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .categorias h2 {
+      margin-bottom: 10px;
+    }
+
+    .categorias p {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .item {
+      background: #1e1e2f;
+      border-radius: 10px;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .item img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .item span {
+      display: block;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Santos <span>TV</span></div>
+    <a class="btn-contato" href="https://wa.me/5551997683857?text=Ol%C3%A1%2C%20gostaria%20de%20me%20informar%20sobre%20os%20planos%20de%20IPTV." target="_blank">Fale Conosco</a>
+  </header>
+
+  <section class="hero">
+    <h1>A REVOLUÇÃO DA TV <span>CHEGOU</span></h1>
+    <p>Filmes lançamentos, séries aclamadas e o melhor do futebol ao vivo. Tudo o que você ama, em um só lugar e em qualquer 
+    dispositivo.</p>
+ 
+    <section class="categorias">
+    <h2>Conteúdo para toda a família</h2>
+    <p>De blockbusters a clássicos, de maratonas de séries a jogos emocionantes do seu time.</p>
+    <div class="grid">
+      <div class="item">
+        <img src="download.jpeg" alt="Filme de Ação">
+        <span>Filme de Ação 2025</span>
+      </div>
+      <div class="item">
+        <img src="download (1).jpeg" alt="Série Popular">
+        <span>Série Popular 2025</span>
+      </div>
+      <div class="item">
+        <img src="images.jpeg" alt="Futebol">
+        <span>Futebol ao Vivo<br>Campeonatos</span>
+      </div>
+      <div class="item">
+        <img src="download (2).jpeg" alt="Comédia">
+        <span>Comédia em Família</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="plano">
+    <h2>Plano Premium Mensal</h2>
+    <p>Acesso total e irrestrito</p>
+    <div class="preco">R$35<span style="font-size: 1rem;">/mês</span></div>
+    <ul>
+      <li>+100.000 conteúdos (Canais, Filmes, Séries)</li>
+      <li>Qualidade HD, Full HD e 4K</li>
+      <li>Compatível com Smart TV, TV Box, Celular e PC</li>
+      <li>Sem fidelidade. Cancele quando quiser.</li>
+      <li>Suporte técnico via WhatsApp</li>
+    </ul>
+    <a class="btn-wpp" href="https://wa.me/5551997683857?text=Ol%C3%A1%2C%20gostaria%20de%20me%20informar%20sobre%20os%20planos%20de%20IPTV." target="_blank">ASSINAR AGORA</a>
+  </section>
+
+  <section id="faq" style="background-color:#0f172a; color:#fff; padding: 40px 20px;">
+  <div style="max-width: 800px; margin: auto;">
+
+    <h2 style="font-size: 28px; font-weight: bold; text-align: center; margin-bottom: 30px;">Sobre nosso serviço:</h2>
+
+    <div style="margin-bottom: 25px; background-color: #1e293b; padding: 20px; border-radius: 8px;">
+      <h3 style="color: #ffffff; font-size: 18px;">📦 Como funciona a instalação?</h3>
+      <p style="margin-top: 10px; color: #cbd5e1;">
+        É muito simples! Após a confirmação, enviamos um login e senha. Você só precisa instalar um aplicativo compatível na sua TV ou dispositivo e inserir os dados. Damos todo o suporte necessário.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 25px; background-color: #1e293b; padding: 20px; border-radius: 8px;">
+      <h3 style="color: #ffffff; font-size: 18px;">💻 Quais dispositivos são compatíveis?</h3>
+      <p style="margin-top: 10px; color: #cbd5e1;">
+        Nossa lista é compatível com a maioria dos dispositivos: Smart TVs (Samsung, LG, etc.), TV Box (MXQ, Fire Stick, Mi Box), Celulares e Tablets (Android e iOS) e Computadores/Notebooks.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 25px; background-color: #1e293b; padding: 20px; border-radius: 8px;">
+      <h3 style="color: #ffffff; font-size: 18px;">🚀 Preciso de uma internet muito rápida?</h3>
+      <p style="margin-top: 10px; color: #cbd5e1;">
+        Recomendamos uma conexão de pelo menos 15MB para canais em HD e 30MB para conteúdo em Full HD e 4K, garantindo uma experiência sem travamentos.
+      </p>
+    </div>
+
+    <div style="margin-bottom: 25px; background-color: #1e293b; padding: 20px; border-radius: 8px;">
+      <h3 style="color: #ffffff; font-size: 18px;">🧪 Posso testar antes de assinar?</h3>
+      <p style="margin-top: 10px; color: #cbd5e1;">
+        Sim! Oferecemos um teste grátis para você comprovar a qualidade do nosso serviço. Basta chamar no WhatsApp e solicitar o seu.
+      </p>
+    </div>
+
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="https://wa.me/SEUNUMERO" target="_blank" style="background-color: #8b5cf6; padding: 12px 24px; border-radius: 6px; color: white; text-decoration: none; font-weight: bold;">
+        Fale Conosco via WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
